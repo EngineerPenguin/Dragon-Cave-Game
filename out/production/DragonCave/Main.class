@@ -1,0 +1,30 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+import java.util.Scanner;
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        try {
+            System.out.print("Your are in a land full of dragons. In front of you,\nand will share his treasure with you. The other dragon\nis greedy and hungry and will eat you on sight.\nWhich cave will you go into? (1 or 2): ");
+            Scanner in = new Scanner(System.in);
+            int userChoice = in.nextInt();
+            System.out.println("You chose " + userChoice);
+            if (userChoice == 1) {
+                System.out.println("You approach the cave...\nit's dark and spooky..\nA large dragon leaps out in front of you! He opens his jaws and...\ngobbles you down in one bite!");
+            } else if (userChoice == 2) {
+                System.out.println("You approach the cave...\nit's dark and spooky..\nA large dragon leaps out in front of you! He opens his jaws and...\nSneezes and lays back down, you continue onward.");
+            } else if (userChoice != 1 || userChoice != 2) {
+                System.out.println("Error Code: CHEESE. Please chose option 1 or 2.");
+            }
+        } catch (Exception var3) {
+            System.out.println("Error Code: FROG. User used invalid input and ran away!");
+        }
+
+    }
+}
